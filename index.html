@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate price</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="border">
+        <h1>Calculate price</h1>
+
+        <h2>Choose metal on your piece:
+        </h2>
+
+        <div>
+            <input class="radio" type="radio" name="chooseGold" id="guld" value="1000" checked>
+            <label for="guld">Gold</label>
+        </div>
+
+        <div>
+            <input class="radio" type="radio" name="chooseGold" id="vitguld" value="1000">
+            <label for="vitguld">White Gold</label>
+        </div>
+
+        <div>
+            <input class="radio" type="radio" name="chooseGold" id="roseguld" value="1000">
+            <label for="roseguld">Rose Gold</label>
+        </div>
+
+        <h2>Enter total grams of gold:</h2>
+        <input type="number" id="antalGram" placeholder="total g">
+
+
+
+        <h2>Choose size of your diamond:</h2>
+        <select onchange="val()" id="selectCarat"></select>
+
+
+
+
+        <br><br>
+
+        <button id="countPrice" value="Räkna" onclick="operation();">Calculate price of your jewellery</button>
+
+        <br><br>
+
+        <h1>Estimated value (SEK):</h1>
+        <br>
+        <input type="number" id="answer" readonly />
+
+
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

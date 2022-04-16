@@ -1,0 +1,97 @@
+#border {
+    box-shadow: 0 0 10px #111F4D;
+    text-align: center;
+    padding: 10%;
+      margin: 15%;
+}
+
+h1 {
+    font-size: 30px;
+
+}
+
+h2 {
+    font-size: 25px;
+    padding: 2em 0 1em 0;
+}
+
+
+input[type='radio'] {
+    transform: scale(1.5);
+
+}
+
+
+label {
+    display: inline-block;
+    width: 120px;
+    padding: 0.3%;
+    font-size: large;
+}
+
+#antalGram {
+    font-size: 20px;
+    width: 17%;
+    text-align: center;
+}
+
+#selectCarat {
+    font-size: 20px;
+}
+
+#countPrice {
+    margin: 15px;
+}
+
+#answer {
+    font-size: 30px;
+    width: 45%;
+    text-align: center;
+}
+
+#border button {
+    font-size: 20px;
+    background-color: #111F4D;
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #111F4D;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+#border button:hover {
+    color: #111F4D;
+    background-color: white;
+}
+
+@media all and (max-width:30em) {
+ #border button {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #antalGram {
+        font-size: 20px;
+        width: 40%;
+    }
+    
+    #answer {
+    font-size: 30px;
+    width: 60%;
+
+    }
+
+    #border {
+    
+          margin: 15%;
+    }
+}
